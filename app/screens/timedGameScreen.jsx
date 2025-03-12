@@ -82,7 +82,7 @@ export default function gameScreen() {
                     <Pressable style={[styles.button, { backgroundColor: 'blue' }]} onPress={() => gameOver ? resetGame() : processColumn("blue")}>
                         <Text style={styles.buttonText}>{gameOver ? 'again' : 'blue'}</Text>
                     </Pressable>
-                    <Pressable style={[styles.button, { backgroundColor: 'red' }]} onPress={() => gameOver ? router.back() : processColumn("red")}>
+                    <Pressable style={[styles.button, { backgroundColor: 'red' }]} onPress={() => gameOver ? router.push('/') : processColumn("red")}>
                         <Text style={styles.buttonText}>{gameOver ? 'home' : 'red'}</Text>
                     </Pressable>
                 </View>
